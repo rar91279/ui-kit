@@ -1,0 +1,37 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+
+<Meta title="Theme/Typography" />
+
+# Typography
+
+This page documents the font stacks used in the design system.
+
+## Font Families
+
+- **Sans-serif (Base)**: `system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"`
+- **Serif**: `Georgia, Cambria, "Times New Roman", Times, serif`
+- **Monospace**: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`
+
+## Font Weights
+
+- **Normal**: 400
+- **Medium**: 500
+- **Bold**: 700
+
+## Sample Typeset
+
+### Sans-serif (Base)
+<Typeset
+  fontFamily="var(--font-sans)"
+  fontSizes={['12px', '14px', '16px', '20px', '24px', '32px', '40px', '48px']}
+  fontWeight={400}
+  sampleText="The quick brown fox jumps over the lazy dog"
+/>
+
+### Monospace
+<Typeset
+  fontFamily="var(--font-mono)"
+  fontSizes={['12px', '14px', '16px', '20px', '24px', '32px', '40px', '48px']}
+  fontWeight={400}
+  sampleText="The quick brown fox jumps over the lazy dog"
+/>

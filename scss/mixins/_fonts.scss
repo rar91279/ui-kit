@@ -1,0 +1,102 @@
+/// Font mixin for consistent typography across the application.
+/// 
+/// Applies the default font family with customizable size, weight, style, and line-height.
+/// Uses font-display: swap for optimal loading performance and optimizes readability.
+///
+/// @param {Number} $size [1rem] - Font size (e.g., 1rem, 16px)
+/// @param {Number} $weight [400] - Font weight (100-900)
+/// @param {String} $style [normal] - Font style (normal, italic, oblique)
+/// @param {Number} $lineHeight [1.5] - Line height multiplier
+/// @param {String} $family [var(--default-font-family)] - Font family
+///
+/// @example scss - Basic usage
+///   .text {
+///     @include font();
+///   }
+///
+/// @example scss - Bold text with increased line-height
+///   .heading {
+///     @include font(1.25rem, 700, normal, 1.4);
+///   }
+@mixin font($size: 14px, $weight: 400, $style: normal, $lineHeight: 1.5, $family: var(--default-font-family)) {
+    font-family: $family;
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $lineHeight;
+
+    // Loading & Rendering Optimization
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: normal;
+}
+
+/// Applies small font styling (12px) with customizable weight.
+///
+/// @param {Number} $weight [400] - Font weight (100-900)
+///
+/// @example scss - Basic usage
+///   .small-text {
+///     @include small-font();
+///   }
+///
+/// @example scss - Bold small text
+///   .small-bold {
+///     @include small-font(700);
+///   }
+@mixin small-font($weight: 400) {
+  @include font(12px, $weight: $weight);
+}
+
+/// Applies extra small font styling (10px) with customizable weight.
+///
+/// @param {Number} $weight [400] - Font weight (100-900)
+///
+/// @example scss - Basic usage
+///   .extra-small-text {
+///     @include extra-small-font();
+///   }
+///
+/// @example scss - Bold extra small text
+///   .extra-small-bold {
+///     @include extra-small-font(700);
+///   }
+@mixin extra-small-font($weight: 400) {
+  @include font(10px, $weight);
+}
+
+/// Applies large font styling (16px) with customizable weight.
+///
+/// @param {Number} $weight [400] - Font weight (100-900)
+///
+/// @example scss - Basic usage
+///   .large-text {
+///     @include large-font();
+///   }
+///
+/// @example scss - Bold large text
+///   .large-bold {
+///     @include large-font(700);
+///   }
+@mixin large-font($weight: 400) {
+  @include font(16px, $weight);
+}
+
+/// Applies extra large font styling (18px) with customizable weight.
+///
+/// @param {Number} $weight [400] - Font weight (100-900)
+///
+/// @example scss - Basic usage
+///   .extra-large-text {
+///     @include extra-large-font();
+///   }
+///
+/// @example scss - Bold extra large text
+///   .extra-large-bold {
+///     @include extra-large-font(700);
+///   }
+@mixin extra-large-font($weight: 400) {
+  @include font(18px, $weight);
+}

@@ -1,0 +1,290 @@
+node_modules/@types/chai/index.d.ts:2:58 - error TS2792: Cannot find module 'assertion-error'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+2 import { AssertionError as ImportedAssertionError } from "assertion-error";
+                                                           ~~~~~~~~~~~~~~~~~
+node_modules/@types/mdx/types.d.ts:23:38 - error TS2503: Cannot find namespace 'JSX'.
+23 type StringComponent = Extract<keyof JSX.IntrinsicElements, ElementType extends never ? string : ElementType>;
+                                        ~~~
+node_modules/@types/mdx/types.d.ts:28:23 - error TS2503: Cannot find namespace 'JSX'.
+28 export type Element = JSX.Element;
+                         ~~~
+node_modules/@types/mdx/types.d.ts:47:28 - error TS2503: Cannot find namespace 'JSX'.
+47     ? new(props: Props) => JSX.ElementClass
+                              ~~~
+node_modules/@types/mdx/types.d.ts:73:46 - error TS2503: Cannot find namespace 'JSX'.
+73         [Key in StringComponent]?: Component<JSX.IntrinsicElements[Key]>;
+                                                ~~~
+node_modules/@types/react/index.d.ts:7:22 - error TS2792: Cannot find module 'csstype'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+7 import * as CSS from "csstype";
+                       ~~~~~~~~~
+node_modules/@types/trusted-types/index.d.ts:1:22 - error TS2792: Cannot find module './lib'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import * as lib from "./lib";
+                       ~~~~~~~
+node_modules/@vitest/browser-playwright/dist/index.d.ts:1:43 - error TS2792: Cannot find module '@vitest/browser'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { CustomComparatorsRegistry } from '@vitest/browser';
+                                            ~~~~~~~~~~~~~~~~~
+node_modules/@vitest/browser-playwright/dist/index.d.ts:2:38 - error TS2792: Cannot find module '@vitest/browser'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+2 export { defineBrowserCommand } from '@vitest/browser';
+                                       ~~~~~~~~~~~~~~~~~
+node_modules/@vitest/browser-playwright/dist/index.d.ts:3:134 - error TS2792: Cannot find module 'playwright'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+3 import { Page, Frame, FrameLocator, BrowserContext, CDPSession, LaunchOptions, ConnectOptions, BrowserContextOptions, Browser } from 'playwright';
+                                                                                                                                       ~~~~~~~~~~~~
+node_modules/@vitest/browser-playwright/dist/index.d.ts:4:81 - error TS2792: Cannot find module 'vitest/browser'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+4 import { ScreenshotMatcherOptions, ScreenshotComparatorRegistry, Locator } from 'vitest/browser';
+                                                                                  ~~~~~~~~~~~~~~~~
+node_modules/@vitest/runner/dist/tasks.d-C7UxawJ9.d.ts:1:38 - error TS2792: Cannot find module '@vitest/utils'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { TestError, Awaitable } from '@vitest/utils';
+                                       ~~~~~~~~~~~~~~~
+node_modules/@vitest/runner/dist/utils.d.ts:3:40 - error TS2792: Cannot find module '@vitest/utils'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+3 import { ParsedStack, Arrayable } from '@vitest/utils';
+                                         ~~~~~~~~~~~~~~~
+node_modules/@vitest/snapshot/dist/rawSnapshot.d-lFsMJFUd.d.ts:1:41 - error TS2792: Cannot find module '@vitest/pretty-format'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { OptionsReceived, Plugin } from '@vitest/pretty-format';
+                                          ~~~~~~~~~~~~~~~~~~~~~~~
+node_modules/@vitest/utils/dist/types.d-BCElaP-c.d.ts:1:29 - error TS2792: Cannot find module '@vitest/pretty-format'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { CompareKeys } from '@vitest/pretty-format';
+                              ~~~~~~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/benchmark.d.DAaHLpsq.d.ts:1:22 - error TS2792: Cannot find module '@vitest/runner'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { Test } from '@vitest/runner';
+                       ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/benchmark.d.DAaHLpsq.d.ts:3:44 - error TS2792: Cannot find module 'tinybench'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+3 import { TaskResult, Bench, Options } from 'tinybench';
+                                             ~~~~~~~~~~~
+node_modules/vitest/dist/chunks/browser.d.ChKACdzH.d.ts:1:35 - error TS2792: Cannot find module '@vitest/runner'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { FileSpecification } from '@vitest/runner';
+                                    ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/config.d.Cy95HiCx.d.ts:1:37 - error TS2792: Cannot find module '@vitest/pretty-format'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { PrettyFormatOptions } from '@vitest/pretty-format';
+                                      ~~~~~~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/config.d.Cy95HiCx.d.ts:2:51 - error TS2792: Cannot find module '@vitest/runner'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+2 import { SequenceHooks, SequenceSetupFiles } from '@vitest/runner';
+                                                    ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/config.d.Cy95HiCx.d.ts:3:58 - error TS2792: Cannot find module '@vitest/snapshot'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+3 import { SnapshotUpdateState, SnapshotEnvironment } from '@vitest/snapshot';
+                                                           ~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/environment.d.CrsxCzP1.d.ts:1:27 - error TS2792: Cannot find module '@vitest/utils'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { Awaitable } from '@vitest/utils';
+                            ~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/global.d.B15mdLcR.d.ts:1:58 - error TS2792: Cannot find module '@vitest/expect'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { PromisifyAssertion, Tester, ExpectStatic } from '@vitest/expect';
+                                                           ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/global.d.B15mdLcR.d.ts:2:24 - error TS2792: Cannot find module '@vitest/pretty-format'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+2 import { Plugin } from '@vitest/pretty-format';
+                         ~~~~~~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/global.d.B15mdLcR.d.ts:3:31 - error TS2792: Cannot find module '@vitest/snapshot'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+3 import { SnapshotState } from '@vitest/snapshot';
+                                ~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/plugin.d.CtqpEehP.d.ts:1:32 - error TS2792: Cannot find module 'vite'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { DevEnvironment } from 'vite';
+                                 ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:1:181 - error TS2792: Cannot find module '@vitest/runner'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { TaskMeta, Suite, File, TestAnnotation, TestArtifact, ImportDuration, Test, Task, TaskResultPack, FileSpecification, CancelReason, SequenceSetupFiles, SequenceHooks } from '@vitest/runner';
+                                                                                                                                                                                      ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:2:79 - error TS2792: Cannot find module '@vitest/utils'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+2 import { TestError, SerializedError, Arrayable, ParsedStack, Awaitable } from '@vitest/utils';
+                                                                                ~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:4:26 - error TS2792: Cannot find module 'node:stream'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+4 import { Writable } from 'node:stream';
+                           ~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:5:184 - error TS2792: Cannot find module 'vite'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+5 import { DevEnvironment, TransformResult as TransformResult$1, ViteDevServer, Plugin, UserConfig as UserConfig$1, DepOptimizationConfig, ServerOptions, ConfigEnv, AliasOptions } from 'vite';
+                                                                                                                                                                                         ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:7:30 - error TS2792: Cannot find module '@vitest/mocker'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+7 import { MockedModule } from '@vitest/mocker';
+                               ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:8:41 - error TS2792: Cannot find module '@vitest/utils/source-map'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+8 import { StackTraceParserOptions } from '@vitest/utils/source-map';
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:9:33 - error TS2792: Cannot find module 'vitest/browser'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+9 import { BrowserCommands } from 'vitest/browser';
+                                  ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:11:37 - error TS2792: Cannot find module '@vitest/pretty-format'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+11 import { PrettyFormatOptions } from '@vitest/pretty-format';
+                                       ~~~~~~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:12:55 - error TS2792: Cannot find module '@vitest/snapshot'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+12 import { SnapshotSummary, SnapshotStateOptions } from '@vitest/snapshot';
+                                                         ~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:14:22 - error TS2792: Cannot find module '@vitest/expect'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+14 import { chai } from '@vitest/expect';
+                        ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:21:25 - error TS2792: Cannot find module 'node:console'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+21 import { Console } from 'node:console';
+                           ~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:22:23 - error TS2792: Cannot find module 'node:fs'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+22 import { Stats } from 'node:fs';
+                         ~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:28:66 - error TS2694: Namespace '"G:/dev/css-at-glance/node_modules/vitest/jsdom"' has no exported member 'ConstructorOptions'.
+28 type JSDOMOptions = ConstructorOptionsOverride & Omit<jsdomTypes.ConstructorOptions, keyof ConstructorOptionsOverride>;
+                                                                    ~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:851:16 - error TS2503: Cannot find namespace 'NodeJS'.
+851  outputStream: NodeJS.WriteStream | Writable;
+                   ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:852:15 - error TS2503: Cannot find namespace 'NodeJS'.
+852  errorStream: NodeJS.WriteStream | Writable;
+                  ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:857:42 - error TS2503: Cannot find namespace 'NodeJS'.
+857  constructor(ctx: Vitest, outputStream?: NodeJS.WriteStream | Writable, errorStream?: NodeJS.WriteStream | Writable);
+                                             ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:857:87 - error TS2503: Cannot find namespace 'NodeJS'.
+857  constructor(ctx: Vitest, outputStream?: NodeJS.WriteStream | Writable, errorStream?: NodeJS.WriteStream | Writable);
+                                                                                          ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:1104:10 - error TS2503: Cannot find namespace 'NodeJS'.
+1104  stdin?: NodeJS.ReadStream;
+              ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:1105:11 - error TS2503: Cannot find namespace 'NodeJS'.
+1105  stdout?: NodeJS.WriteStream | Writable;
+               ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:1106:11 - error TS2503: Cannot find namespace 'NodeJS'.
+1106  stderr?: NodeJS.WriteStream | Writable;
+               ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:1736:12 - error TS2503: Cannot find namespace 'NodeJS'.
+1736  platform: NodeJS.Platform;
+                ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:1913:15 - error TS2503: Cannot find namespace 'NodeJS'.
+1913  env: Partial<NodeJS.ProcessEnv>;
+                   ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:1940:15 - error TS2503: Cannot find namespace 'NodeJS'.
+1940  env: Partial<NodeJS.ProcessEnv>;
+                   ~~~~~~
+node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:2809:16 - error TS2503: Cannot find namespace 'NodeJS'.
+2809  env?: Partial<NodeJS.ProcessEnv>;
+                    ~~~~~~
+node_modules/vitest/dist/chunks/rpc.d.RH3apGEf.d.ts:1:81 - error TS2792: Cannot find module '@vitest/runner'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { CancelReason, File, TestArtifact, TaskResultPack, TaskEventPack } from '@vitest/runner';
+                                                                                  ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/rpc.d.RH3apGEf.d.ts:2:32 - error TS2792: Cannot find module '@vitest/snapshot'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+2 import { SnapshotResult } from '@vitest/snapshot';
+                                 ~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/rpc.d.RH3apGEf.d.ts:3:51 - error TS2792: Cannot find module 'vite/module-runner'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+3 import { FetchFunctionOptions, FetchResult } from 'vite/module-runner';
+                                                    ~~~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/worker.d.Dyxm8DEL.d.ts:1:55 - error TS2792: Cannot find module '@vitest/runner'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { FileSpecification, Task, CancelReason } from '@vitest/runner';
+                                                        ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/chunks/worker.d.Dyxm8DEL.d.ts:2:34 - error TS2792: Cannot find module 'vite/module-runner'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+2 import { EvaluatedModules } from 'vite/module-runner';
+                                   ~~~~~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/node.d.ts:1:23 - error TS2792: Cannot find module 'vite'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import * as vite from 'vite';
+                        ~~~~~~
+node_modules/vitest/dist/node.d.ts:2:162 - error TS2792: Cannot find module 'vite'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+2 import { InlineConfig, UserConfig as UserConfig$1, Plugin, ResolvedConfig as ResolvedConfig$1, ViteDevServer, LogLevel, LoggerOptions, Logger as Logger$1 } from 'vite';
+                                                                                                                                                                   ~~~~~~
+node_modules/vitest/dist/node.d.ts:4:132 - error TS2792: Cannot find module 'vite'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+4 export { esbuildVersion, isCSSRequest, isFileLoadingAllowed, parseAst, parseAstAsync, rollupVersion, version as viteVersion } from 'vite';
+                                                                                                                                     ~~~~~~
+node_modules/vitest/dist/node.d.ts:5:33 - error TS2792: Cannot find module 'node:http'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+5 import { IncomingMessage } from 'node:http';
+                                  ~~~~~~~~~~~
+node_modules/vitest/dist/node.d.ts:9:27 - error TS2792: Cannot find module '@vitest/utils'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+9 import { Awaitable } from '@vitest/utils';
+                            ~~~~~~~~~~~~~~~
+node_modules/vitest/dist/node.d.ts:10:33 - error TS2792: Cannot find module '@vitest/utils'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+10 export { SerializedError } from '@vitest/utils';
+                                   ~~~~~~~~~~~~~~~
+node_modules/vitest/dist/node.d.ts:12:26 - error TS2792: Cannot find module 'node:stream'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+12 import { Writable } from 'node:stream';
+                            ~~~~~~~~~~~~~
+node_modules/vitest/dist/node.d.ts:15:26 - error TS2792: Cannot find module 'obug'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+15 import { Debugger } from 'obug';
+                            ~~~~~~
+node_modules/vitest/dist/node.d.ts:17:217 - error TS2792: Cannot find module '@vitest/runner'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+17 export { Task as RunnerTask, TaskResult as RunnerTaskResult, TaskResultPack as RunnerTaskResultPack, Test as RunnerTestCase, File as RunnerTestFile, Suite as RunnerTestSuite, SequenceHooks, SequenceSetupFiles } from '@vitest/runner';
+                                                                                                                                                                                                                           ~~~~~~~~~~~~~~~~
+node_modules/vitest/dist/node.d.ts:152:25 - error TS2503: Cannot find namespace 'NodeJS'.
+152  protected env: Partial<NodeJS.ProcessEnv>;
+                            ~~~~~~
+node_modules/vitest/dist/node.d.ts:171:25 - error TS2503: Cannot find namespace 'NodeJS'.
+171  protected env: Partial<NodeJS.ProcessEnv>;
+                            ~~~~~~
+node_modules/vitest/dist/node.d.ts:226:63 - error TS2503: Cannot find namespace 'NodeJS'.
+226 declare function registerConsoleShortcuts(ctx: Vitest, stdin: NodeJS.ReadStream | undefined, stdout: NodeJS.WriteStream | Writable): () => void;
+                                                                  ~~~~~~
+node_modules/vitest/dist/node.d.ts:226:102 - error TS2503: Cannot find namespace 'NodeJS'.
+226 declare function registerConsoleShortcuts(ctx: Vitest, stdin: NodeJS.ReadStream | undefined, stdout: NodeJS.WriteStream | Writable): () => void;
+                                                                                                         ~~~~~~
+node_modules/vitest/jsdom.d.ts:1:15 - error TS2459: Module '"jsdom"' declares 'JSDOM' locally, but it is not exported.
+1 import type { JSDOM } from 'jsdom'
+                ~~~~~
+  node_modules/vitest/jsdom.d.ts:1:15
+    1 import type { JSDOM } from 'jsdom'
+                    ~~~~~
+    'JSDOM' is declared here.
+src/stories/Tooltip.stories.ts:1:22 - error TS2792: Cannot find module 'lit'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import { html } from 'lit';
+                       ~~~~~
+src/stories/Tooltip.stories.ts:2:37 - error TS2792: Cannot find module '@storybook/web-components-vite'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+2 import type { Meta, StoryObj } from '@storybook/web-components-vite';
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tsconfig.json:1:1 - error TS5092: The root value of a 'tsconfig.json' file must be an object.
+  1 {
+    ~
+  2   "compilerOptions": {
+    ~~~~~~~~~~~~~~~~~~~~~~
+...
+ 28   "include": ["src"]
+    ~~~~~~~~~~~~~~~~~~~~
+ 29 }
+    ~
+tsconfig.json:6:5 - error TS1012: Unexpected token.
+6     "experimentalDecorators": true,
+      ~~~~~~~~~~~~~~~~~~~~~~~~
+tsconfig.json:27:4 - error TS1005: '{' expected.
+27   },
+      ~
+vitest.config.ts:1:18 - error TS2792: Cannot find module 'node:path'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+1 import path from 'node:path';
+                   ~~~~~~~~~~~
+vitest.config.ts:2:31 - error TS2792: Cannot find module 'node:url'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+2 import { fileURLToPath } from 'node:url';
+                                ~~~~~~~~~~
+vitest.config.ts:4:30 - error TS2792: Cannot find module 'vitest/config'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+4 import { defineConfig } from 'vitest/config';
+                               ~~~~~~~~~~~~~~~
+vitest.config.ts:6:31 - error TS2792: Cannot find module '@storybook/addon-vitest/vitest-plugin'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+6 import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vitest.config.ts:8:28 - error TS2792: Cannot find module '@vitest/browser-playwright'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
+8 import { playwright } from '@vitest/browser-playwright';
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vitest.config.ts:11:10 - error TS2552: Cannot find name '__dirname'. Did you mean 'dirname'?
+11   typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
+            ~~~~~~~~~
+  vitest.config.ts:10:7
+    10 const dirname =
+             ~~~~~~~
+    'dirname' is declared here.
+vitest.config.ts:11:38 - error TS2552: Cannot find name '__dirname'. Did you mean 'dirname'?
+11   typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
+                                        ~~~~~~~~~
+  vitest.config.ts:10:7
+    10 const dirname =
+             ~~~~~~~
+    'dirname' is declared here.
+vitest.config.ts:11:77 - error TS1343: The 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', or 'nodenext'.
+11   typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
+                                                                               ~~~~~~~~~~~
+Found 82 errors in 23 files.
+Errors  Files
+     1  node_modules/@types/chai/index.d.ts:2
+     4  node_modules/@types/mdx/types.d.ts:23
+     1  node_modules/@types/react/index.d.ts:7
+     1  node_modules/@types/trusted-types/index.d.ts:1
+     4  node_modules/@vitest/browser-playwright/dist/index.d.ts:1
+     1  node_modules/@vitest/runner/dist/tasks.d-C7UxawJ9.d.ts:1
+     1  node_modules/@vitest/runner/dist/utils.d.ts:3
+     1  node_modules/@vitest/snapshot/dist/rawSnapshot.d-lFsMJFUd.d.ts:1
+     1  node_modules/@vitest/utils/dist/types.d-BCElaP-c.d.ts:1
+     2  node_modules/vitest/dist/chunks/benchmark.d.DAaHLpsq.d.ts:1
+     1  node_modules/vitest/dist/chunks/browser.d.ChKACdzH.d.ts:1
+     3  node_modules/vitest/dist/chunks/config.d.Cy95HiCx.d.ts:1
+     1  node_modules/vitest/dist/chunks/environment.d.CrsxCzP1.d.ts:1
+     3  node_modules/vitest/dist/chunks/global.d.B15mdLcR.d.ts:1
+     1  node_modules/vitest/dist/chunks/plugin.d.CtqpEehP.d.ts:1
+    24  node_modules/vitest/dist/chunks/reporters.d.CWXNI2jG.d.ts:1
+     3  node_modules/vitest/dist/chunks/rpc.d.RH3apGEf.d.ts:1
+     2  node_modules/vitest/dist/chunks/worker.d.Dyxm8DEL.d.ts:1
+    13  node_modules/vitest/dist/node.d.ts:1
+     1  node_modules/vitest/jsdom.d.ts:1
+     2  src/stories/Tooltip.stories.ts:1
+     3  tsconfig.json:1
+     8  vitest.config.ts:1

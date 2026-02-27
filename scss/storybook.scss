@@ -1,0 +1,10 @@
+@use "module/colors.css";
+
+// Storybook preview blocks inheritance
+.docs-story,
+.sb-story,
+.sb-main-padded,
+.sb-show-main {
+  background-color: var(--body-bg) !important;
+  color: var(--body-color) !important;
+}

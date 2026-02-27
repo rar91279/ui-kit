@@ -1,0 +1,16 @@
+@use "../mixins/fonts";
+
+:root {
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --font-family-base: var(--font-sans);
+  --font-family-heading: var(--font-sans);
+  --font-family-mono: var(--font-mono);
+  --default-font-family: var(--font-family-base);
+}
+
+body {
+  @include fonts.font($size: 14px, $family: var(--font-family-base));
+}

@@ -1,0 +1,57 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as TooltipStories from './Tooltip.stories';
+
+<Meta of={TooltipStories} />
+
+# Tooltip
+
+Tooltips are small overlays that provide extra information when hovering over an element.
+
+## Usage
+
+To add a tooltip to any element, use the `data-tooltip` attribute.
+
+```html
+<span data-tooltip="This is the tooltip text">Hover over me</span>
+```
+
+The tooltip is implemented entirely in CSS using the modern **CSS Anchor Positioning API** via the `::after` pseudo-element on elements that have the `[data-tooltip]` attribute.
+
+### Default Example
+
+<Canvas of={TooltipStories.Default} />
+
+### Fallback Examples
+
+If there is not enough space above the element, the tooltip will automatically try to position itself at the bottom, then right, then left.
+
+#### Top of Viewport (Fallback to Bottom)
+
+<Canvas of={TooltipStories.FallbackBottom} />
+
+#### Left of Viewport (Fallback to Right)
+
+<Canvas of={TooltipStories.FallbackRight} />
+
+### Long Text Example
+
+<Canvas of={TooltipStories.LongText} />
+
+## Properties
+
+The tooltip behavior is controlled by the following CSS properties in `scss/module/tooltip.scss`:
+
+- `data-tooltip`: The text to be displayed in the tooltip.
+- `anchor-name`: Defines the base element as an anchor.
+- `position-anchor`: Associates the tooltip with the base element anchor.
+- `position-try-options`: Defines the fallback positions (`--bottom`, `--right`, `--left`).
+- `@position-try`: Defines the custom position overrides for fallback scenarios.
+- `bottom: anchor(top)` & `left: anchor(center)`: Positions the tooltip relative to the anchor.
+- `::after`: The pseudo-element that creates the tooltip bubble.
+- `transition`: Handles the fade-in effect on hover.
+
+## Controls
+
+Use the controls below to experiment with the tooltip content.
+
+<Controls />

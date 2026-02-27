@@ -1,0 +1,137 @@
+:root {
+  --burnished-lilac: oklch(76.22% 0.046 324.7);
+  --teaberry: oklch(62.43% 0.165 352.1);
+  --pale-banana: oklch(90.15% 0.113 95.8);
+  --mandarin-orange: oklch(68.12% 0.198 45.3);
+  --amaranth: oklch(51.3% 0.23 17);
+  --tickled-pink: oklch(78.15% 0.142 350.2);
+  --amethyst-orchid: oklch(61.22% 0.154 305.4);
+  --caramel: oklch(58.34% 0.132 68.9);
+  --dutch-canal: oklch(48.22% 0.086 240.3);
+  --shale-green: oklch(64.12% 0.054 165.2);
+  --acacia: oklch(88.34% 0.142 85.6);
+  --marina: oklch(56.2% 0.12 255);
+  --muskmelon: oklch(82.12% 0.112 55.4);
+  --alexandrite: oklch(45.12% 0.082 185.3);
+  --lava-falls: oklch(45.12% 0.186 28.4);
+  --dusty-rose: oklch(72.15% 0.082 355.4);
+  --tea-rose: oklch(85.34% 0.064 345.6);
+  --burnt-sienna: oklch(56.12% 0.142 42.3);
+  --lavender-blue: oklch(78.22% 0.112 275.4);
+  --desert-sun: oklch(68.34% 0.154 52.3);
+  --poppy-red: oklch(54.12% 0.212 25.4);
+  --magical-forest: oklch(34.2% 0.05 160);
+  --salted-lime: oklch(88.12% 0.154 110.3);
+  --hot-chocolate: oklch(32.12% 0.062 45.4);
+  --fanfare: oklch(45.22% 0.112 215.3);
+  --chili-oil: oklch(38.12% 0.134 32.4);
+  --fig: oklch(35.22% 0.084 315.6);
+  --bronze-mist: oklch(55.12% 0.072 85.4);
+  --lemon-grass: oklch(82.22% 0.082 105.3);
+  --brandied-melon: oklch(63.2% 0.12 40);
+  --lyons-blue: oklch(36.19% 0.124 250.6);
+  --damson: oklch(32.22% 0.094 325.4);
+  --primrose-pink: oklch(84.12% 0.082 345.3);
+  --winterberry: oklch(48.22% 0.154 355.6);
+  --bronze-brown: oklch(42.12% 0.084 65.3);
+
+  --lions-blue: var(--lyons-blue);
+
+  --warning: var(--brandied-melon);
+  --success: var(--magical-forest);
+  --info: var(--marina);
+  --error: var(--amaranth);
+}
+
+/* Theme colors */
+body {
+  --base: var(--lions-blue);
+
+  /* Warning Palette */
+  --warning-50: oklch(from var(--warning) 95% 0.02 h);
+  --warning-100: oklch(from var(--warning) 90% 0.04 h);
+  --warning-200: oklch(from var(--warning) 80% 0.06 h);
+  --warning-300: oklch(from var(--warning) 70% 0.08 h);
+  --warning-400: oklch(from var(--warning) 60% 0.10 h);
+  --warning-500: var(--warning);
+  --warning-600: oklch(from var(--warning) 30% 0.10 h);
+  --warning-700: oklch(from var(--warning) 25% 0.08 h);
+  --warning-800: oklch(from var(--warning) 20% 0.06 h);
+  --warning-900: oklch(from var(--warning) 15% 0.04 h);
+
+  /* Success Palette */
+  --success-50: oklch(from var(--success) 95% 0.02 h);
+  --success-100: oklch(from var(--success) 90% 0.04 h);
+  --success-200: oklch(from var(--success) 80% 0.06 h);
+  --success-300: oklch(from var(--success) 70% 0.08 h);
+  --success-400: oklch(from var(--success) 60% 0.10 h);
+  --success-500: var(--success);
+  --success-600: oklch(from var(--success) 30% 0.10 h);
+  --success-700: oklch(from var(--success) 25% 0.08 h);
+  --success-800: oklch(from var(--success) 20% 0.06 h);
+  --success-900: oklch(from var(--success) 15% 0.04 h);
+
+  /* Info Palette */
+  --info-50: oklch(from var(--info) 95% 0.02 h);
+  --info-100: oklch(from var(--info) 90% 0.04 h);
+  --info-200: oklch(from var(--info) 80% 0.06 h);
+  --info-300: oklch(from var(--info) 70% 0.08 h);
+  --info-400: oklch(from var(--info) 60% 0.10 h);
+  --info-500: var(--info);
+  --info-600: oklch(from var(--info) 30% 0.10 h);
+  --info-700: oklch(from var(--info) 25% 0.08 h);
+  --info-800: oklch(from var(--info) 20% 0.06 h);
+  --info-900: oklch(from var(--info) 15% 0.04 h);
+
+  /* Error Palette */
+  --error-50: oklch(from var(--error) 95% 0.02 h);
+  --error-100: oklch(from var(--error) 90% 0.04 h);
+  --error-200: oklch(from var(--error) 80% 0.06 h);
+  --error-300: oklch(from var(--error) 70% 0.08 h);
+  --error-400: oklch(from var(--error) 60% 0.10 h);
+  --error-500: var(--error);
+  --error-600: oklch(from var(--error) 30% 0.10 h);
+  --error-700: oklch(from var(--error) 25% 0.08 h);
+  --error-800: oklch(from var(--error) 20% 0.06 h);
+  --error-900: oklch(from var(--error) 15% 0.04 h);
+
+  /* Base Palette - dynamically deriving from base variable */
+  --base-50: oklch(from var(--base) 95% 0.02 h);
+  --base-100: oklch(from var(--base) 90% 0.04 h);
+  --base-200: oklch(from var(--base) 80% 0.06 h);
+  --base-300: oklch(from var(--base) 70% 0.08 h);
+  --base-400: oklch(from var(--base) 60% 0.10 h);
+  --base-500: var(--base);
+  --base-600: oklch(from var(--base) 30% 0.10 h);
+  --base-700: oklch(from var(--base) 25% 0.08 h);
+  --base-800: oklch(from var(--base) 20% 0.06 h);
+  --base-900: oklch(from var(--base) 15% 0.04 h);
+
+  --body-bg: var(--base-50);
+  --body-color: var(--base-900);
+}
+
+body.fanfare {
+  --base: var(--fanfare);
+}
+
+body.lava-falls {
+  --base: var(--lava-falls);
+}
+
+body.dark {
+  --body-bg: var(--base-900);
+  --body-color: var(--base-50);
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light) {
+    --body-bg: var(--base-900);
+    --body-color: var(--base-50);
+  }
+}
