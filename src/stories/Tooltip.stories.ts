@@ -57,3 +57,16 @@ export const FallbackRight: Story = {
     content: 'Hover me (Left side)',
   },
 };
+
+export const Scoping: Story = {
+  render: () => html`
+    <div style="padding: 100px; display: flex; flex-direction: column; gap: 50px; align-items: center;">
+      <span data-tooltip="First Tooltip (Top Left)" data-tooltip-position="top left">
+        Hover for Top Left
+      </span>
+      <span data-tooltip="Second Tooltip (Bottom Right)" data-tooltip-position="bottom right">
+        Hover for Bottom Right
+      </span>
+    </div>
+  `,
+};

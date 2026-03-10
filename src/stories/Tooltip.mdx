@@ -37,18 +37,31 @@ If there is not enough space above the element, the tooltip will automatically t
 
 <Canvas of={TooltipStories.LongText} />
 
+### Scoping and Custom Positioning
+
+The `Scoping` example demonstrates how multiple elements can have tooltips on the same page, even when using the same anchor name, by utilizing the `anchor-scope` property. It also shows how the tooltip's position can be customized using the `data-tooltip-position` attribute.
+
+<Canvas of={TooltipStories.Scoping} />
+
+#### `anchor-scope`
+
+The `anchor-scope` property is used to limit the visibility of an anchor name to a specific subtree. In the tooltip implementation, `anchor-scope: --tooltip-anhor;` is applied to each element with the `[data-tooltip]` attribute. This ensures that the tooltip associated with each element correctly targets its own anchor, even if multiple elements share the same `--tooltip-anhor` name.
+
+#### `data-tooltip-position`
+
+The `data-tooltip-position` attribute allows for manual control over where the tooltip appears relative to its anchor. Supported values include `top left`, `top center`, `top right`, `bottom left`, `bottom center`, `bottom right`, `left top`, `left center`, `left bottom`, `right top`, `right center`, and `right bottom`.
+
 ## Properties
 
 The tooltip behavior is controlled by the following CSS properties in `scss/module/tooltip.scss`:
 
 - `data-tooltip`: The text to be displayed in the tooltip.
-- `anchor-name`: Defines the base element as an anchor.
-- `position-anchor`: Associates the tooltip with the base element anchor.
-- `position-try-options`: Defines the fallback positions (`--bottom`, `--right`, `--left`).
-- `@position-try`: Defines the custom position overrides for fallback scenarios.
-- `bottom: anchor(top)` & `left: anchor(center)`: Positions the tooltip relative to the anchor.
+- `data-tooltip-position`: (Optional) Specifies the preferred position for the tooltip.
+- `anchor-scope`: Scopes the `--tooltip-anhor` name to the element, preventing conflicts with other tooltips.
+- `anchor-name`: Defines the element as an anchor named `--tooltip-anhor` on hover.
+- `position-anchor`: Associates the tooltip (the `::after` pseudo-element) with the `--tooltip-anhor`.
+- `position-area`: Positions the tooltip relative to its anchor using values like `top right` (default) or the value from `data-tooltip-position`.
 - `::after`: The pseudo-element that creates the tooltip bubble.
-- `transition`: Handles the fade-in effect on hover.
 
 ## Controls
 

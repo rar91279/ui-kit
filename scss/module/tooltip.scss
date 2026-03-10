@@ -3,6 +3,20 @@
 [data-tooltip] {
   --tooltip-bg-color: var(--base-800);
   --tooltip-color: var(--base-100);
+  --tooltip-position-area: top right;
+
+  &[data-tooltip-position="top left"] { --tooltip-position-area: top left; }
+  &[data-tooltip-position="top center"] { --tooltip-position-area: top center; }
+  &[data-tooltip-position="top right"] { --tooltip-position-area: top right; }
+  &[data-tooltip-position="bottom left"] { --tooltip-position-area: bottom left; }
+  &[data-tooltip-position="bottom center"] { --tooltip-position-area: bottom center; }
+  &[data-tooltip-position="bottom right"] { --tooltip-position-area: bottom right; }
+  &[data-tooltip-position="left top"] { --tooltip-position-area: left top; }
+  &[data-tooltip-position="left center"] { --tooltip-position-area: left center; }
+  &[data-tooltip-position="left bottom"] { --tooltip-position-area: left bottom; }
+  &[data-tooltip-position="right top"] { --tooltip-position-area: right top; }
+  &[data-tooltip-position="right center"] { --tooltip-position-area: right center; }
+  &[data-tooltip-position="right bottom"] { --tooltip-position-area: right bottom; }
 
   anchor-scope: --tooltip-anhor;
   cursor: help;
@@ -15,7 +29,7 @@
       content: attr(data-tooltip);
       position: fixed;
       position-anchor: --tooltip-anhor;
-      position-area: top right;
+      position-area: var(--tooltip-position-area);
       padding: var(--s-spacing) var(--spacing);
 
       corner-shape: squircle;
