@@ -16,7 +16,15 @@ const applyThemeAndScheme = (theme: string, scheme: string) => {
 
     // Handle Theme
     if (theme) {
-      body.classList.remove('fanfare', 'lava-falls', 'winterberry', 'hot-chocolate', 'desert-sun');
+      // Get all possible theme values from the global types if we want to be very dynamic,
+      // but for now we'll just remove classes that are definitely themes.
+      // Since we know all our themes, we can collect them.
+      const themeItems = preview.globalTypes?.theme?.toolbar?.items || [];
+      const allThemeClasses = themeItems
+        .map((item: any) => item.value)
+        .filter((val: string) => val !== 'default');
+
+      body.classList.remove(...allThemeClasses);
       if (theme !== 'default') {
         body.classList.add(theme);
       }
@@ -59,6 +67,32 @@ const preview: Preview = {
           { value: 'winterberry', icon: 'circle', title: 'Winterberry' },
           { value: 'hot-chocolate', icon: 'circle', title: 'Hot Chocolate' },
           { value: 'desert-sun', icon: 'circle', title: 'Desert Sun' },
+          { value: 'burnished-lilac', icon: 'circle', title: 'Burnished Lilac' },
+          { value: 'teaberry', icon: 'circle', title: 'Teaberry' },
+          { value: 'pale-banana', icon: 'circle', title: 'Pale Banana' },
+          { value: 'mandarin-orange', icon: 'circle', title: 'Mandarin Orange' },
+          { value: 'tickled-pink', icon: 'circle', title: 'Tickled Pink' },
+          { value: 'amethyst-orchid', icon: 'circle', title: 'Amethyst Orchid' },
+          { value: 'caramel', icon: 'circle', title: 'Caramel' },
+          { value: 'dutch-canal', icon: 'circle', title: 'Dutch Canal' },
+          { value: 'shale-green', icon: 'circle', title: 'Shale Green' },
+          { value: 'muskmelon', icon: 'circle', title: 'Muskmelon' },
+          { value: 'alexandrite', icon: 'circle', title: 'Alexandrite' },
+          { value: 'dusty-rose', icon: 'circle', title: 'Dusty Rose' },
+          { value: 'tea-rose', icon: 'circle', title: 'Tea Rose' },
+          { value: 'burnt-sienna', icon: 'circle', title: 'Burnt Sienna' },
+          { value: 'lavender-blue', icon: 'circle', title: 'Lavender Blue' },
+          { value: 'poppy-red', icon: 'circle', title: 'Poppy Red' },
+          { value: 'salted-lime', icon: 'circle', title: 'Salted Lime' },
+          { value: 'chili-oil', icon: 'circle', title: 'Chili Oil' },
+          { value: 'fig', icon: 'circle', title: 'Fig' },
+          { value: 'bronze-mist', icon: 'circle', title: 'Bronze Mist' },
+          { value: 'lemon-grass', icon: 'circle', title: 'Lemon Grass' },
+          { value: 'brandied-melon', icon: 'circle', title: 'Brandied Melon' },
+          { value: 'lyons-blue', icon: 'circle', title: 'Lyons Blue' },
+          { value: 'damson', icon: 'circle', title: 'Damson' },
+          { value: 'primrose-pink', icon: 'circle', title: 'Primrose Pink' },
+          { value: 'bronze-brown', icon: 'circle', title: 'Bronze Brown' },
         ],
         showName: true,
       },

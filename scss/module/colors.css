@@ -131,6 +131,33 @@ body.desert-sun {
   --base: var(--desert-sun);
 }
 
+body.burnished-lilac { --base: var(--burnished-lilac); }
+body.teaberry { --base: var(--teaberry); }
+body.pale-banana { --base: var(--pale-banana); }
+body.mandarin-orange { --base: var(--mandarin-orange); }
+body.tickled-pink { --base: var(--tickled-pink); }
+body.amethyst-orchid { --base: var(--amethyst-orchid); }
+body.caramel { --base: var(--caramel); }
+body.dutch-canal { --base: var(--dutch-canal); }
+body.shale-green { --base: var(--shale-green); }
+body.muskmelon { --base: var(--muskmelon); }
+body.alexandrite { --base: var(--alexandrite); }
+body.dusty-rose { --base: var(--dusty-rose); }
+body.tea-rose { --base: var(--tea-rose); }
+body.burnt-sienna { --base: var(--burnt-sienna); }
+body.lavender-blue { --base: var(--lavender-blue); }
+body.poppy-red { --base: var(--poppy-red); }
+body.salted-lime { --base: var(--salted-lime); }
+body.chili-oil { --base: var(--chili-oil); }
+body.fig { --base: var(--fig); }
+body.bronze-mist { --base: var(--bronze-mist); }
+body.lemon-grass { --base: var(--lemon-grass); }
+body.brandied-melon { --base: var(--brandied-melon); }
+body.lyons-blue { --base: var(--lyons-blue); }
+body.damson { --base: var(--damson); }
+body.primrose-pink { --base: var(--primrose-pink); }
+body.bronze-brown { --base: var(--bronze-brown); }
+
 body.dark {
   --body-bg: var(--base-900);
   --body-color: var(--base-50);
