@@ -16,11 +16,9 @@ const applyThemeAndScheme = (theme: string, scheme: string) => {
 
     // Handle Theme
     if (theme) {
-      body.classList.remove('fanfare', 'lava-falls');
-      if (theme === 'fanfare') {
-        body.classList.add('fanfare');
-      } else if (theme === 'lava-falls') {
-        body.classList.add('lava-falls');
+      body.classList.remove('fanfare', 'lava-falls', 'winterberry', 'hot-chocolate', 'desert-sun');
+      if (theme !== 'default') {
+        body.classList.add(theme);
       }
     }
 
@@ -58,6 +56,9 @@ const preview: Preview = {
           { value: 'default', icon: 'circlehollow', title: 'Default' },
           { value: 'fanfare', icon: 'circle', title: 'Fanfare' },
           { value: 'lava-falls', icon: 'circle', title: 'Lava Falls' },
+          { value: 'winterberry', icon: 'circle', title: 'Winterberry' },
+          { value: 'hot-chocolate', icon: 'circle', title: 'Hot Chocolate' },
+          { value: 'desert-sun', icon: 'circle', title: 'Desert Sun' },
         ],
         showName: true,
       },

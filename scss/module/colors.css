@@ -119,6 +119,18 @@ body.lava-falls {
   --base: var(--lava-falls);
 }
 
+body.winterberry {
+  --base: var(--winterberry);
+}
+
+body.hot-chocolate {
+  --base: var(--hot-chocolate);
+}
+
+body.desert-sun {
+  --base: var(--desert-sun);
+}
+
 body.dark {
   --body-bg: var(--base-900);
   --body-color: var(--base-50);
