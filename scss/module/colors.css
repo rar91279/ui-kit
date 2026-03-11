@@ -37,7 +37,7 @@
 
   --lions-blue: var(--lyons-blue);
 
-  --warning: var(--brandied-melon);
+  --warning: var(--acacia);
   --success: var(--magical-forest);
   --info: var(--marina);
   --error: var(--amaranth);
@@ -48,7 +48,7 @@ body {
   --base: var(--lions-blue);
 
   /* Warning Palette */
-  --warning-50: oklch(from var(--warning) 95% 0.02 h);
+  --warning-50: oklch(from var(--warning) 99% 0.005 h);
   --warning-100: oklch(from var(--warning) 90% 0.04 h);
   --warning-200: oklch(from var(--warning) 80% 0.06 h);
   --warning-300: oklch(from var(--warning) 70% 0.08 h);
@@ -60,7 +60,7 @@ body {
   --warning-900: oklch(from var(--warning) 15% 0.04 h);
 
   /* Success Palette */
-  --success-50: oklch(from var(--success) 95% 0.02 h);
+  --success-50: oklch(from var(--success) 99% 0.005 h);
   --success-100: oklch(from var(--success) 90% 0.04 h);
   --success-200: oklch(from var(--success) 80% 0.06 h);
   --success-300: oklch(from var(--success) 70% 0.08 h);
@@ -72,7 +72,7 @@ body {
   --success-900: oklch(from var(--success) 15% 0.04 h);
 
   /* Info Palette */
-  --info-50: oklch(from var(--info) 95% 0.02 h);
+  --info-50: oklch(from var(--info) 99% 0.005 h);
   --info-100: oklch(from var(--info) 90% 0.04 h);
   --info-200: oklch(from var(--info) 80% 0.06 h);
   --info-300: oklch(from var(--info) 70% 0.08 h);
@@ -84,7 +84,7 @@ body {
   --info-900: oklch(from var(--info) 15% 0.04 h);
 
   /* Error Palette */
-  --error-50: oklch(from var(--error) 95% 0.02 h);
+  --error-50: oklch(from var(--error) 99% 0.005 h);
   --error-100: oklch(from var(--error) 90% 0.04 h);
   --error-200: oklch(from var(--error) 80% 0.06 h);
   --error-300: oklch(from var(--error) 70% 0.08 h);
@@ -96,7 +96,7 @@ body {
   --error-900: oklch(from var(--error) 15% 0.04 h);
 
   /* Base Palette - dynamically deriving from base variable */
-  --base-50: oklch(from var(--base) 95% 0.02 h);
+  --base-50: oklch(from var(--base) 99% 0.005 h);
   --base-100: oklch(from var(--base) 90% 0.04 h);
   --base-200: oklch(from var(--base) 80% 0.06 h);
   --base-300: oklch(from var(--base) 70% 0.08 h);
@@ -107,7 +107,7 @@ body {
   --base-800: oklch(from var(--base) 20% 0.06 h);
   --base-900: oklch(from var(--base) 15% 0.04 h);
 
-  --body-bg: #fff;
+  --body-bg-color: var(--base-50);
   --body-color: var(--base-900);
 }
 
