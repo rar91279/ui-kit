@@ -3,20 +3,29 @@
 [data-tooltip] {
   --tooltip-bg-color: var(--base-800);
   --tooltip-color: var(--base-100);
-  --tooltip-position-area: top right;
+  --tooltip-position-area: top;
 
-  &[data-tooltip-position="top left"] { --tooltip-position-area: top left; }
-  &[data-tooltip-position="top center"] { --tooltip-position-area: top center; }
-  &[data-tooltip-position="top right"] { --tooltip-position-area: top right; }
-  &[data-tooltip-position="bottom left"] { --tooltip-position-area: bottom left; }
-  &[data-tooltip-position="bottom center"] { --tooltip-position-area: bottom center; }
-  &[data-tooltip-position="bottom right"] { --tooltip-position-area: bottom right; }
-  &[data-tooltip-position="left top"] { --tooltip-position-area: left top; }
-  &[data-tooltip-position="left center"] { --tooltip-position-area: left center; }
-  &[data-tooltip-position="left bottom"] { --tooltip-position-area: left bottom; }
-  &[data-tooltip-position="right top"] { --tooltip-position-area: right top; }
-  &[data-tooltip-position="right center"] { --tooltip-position-area: right center; }
-  &[data-tooltip-position="right bottom"] { --tooltip-position-area: right bottom; }
+  &[data-tooltip-position="top"] { --tooltip-position-area: top; }
+  &[data-tooltip-position="bottom"] { --tooltip-position-area: bottom; }
+  &[data-tooltip-position="left"] { --tooltip-position-area: left; }
+  &[data-tooltip-position="right"] { --tooltip-position-area: right; }
+
+  &[data-tooltip-position*="-"] {
+    --tooltip-pos-start: center;
+    --tooltip-pos-end: center;
+
+    &[data-tooltip-position^="top"] { --tooltip-pos-start: top; }
+    &[data-tooltip-position^="bottom"] { --tooltip-pos-start: bottom; }
+    &[data-tooltip-position^="left"] { --tooltip-pos-start: left; }
+    &[data-tooltip-position^="right"] { --tooltip-pos-start: right; }
+
+    &[data-tooltip-position$="top"] { --tooltip-pos-end: top; }
+    &[data-tooltip-position$="bottom"] { --tooltip-pos-end: bottom; }
+    &[data-tooltip-position$="left"] { --tooltip-pos-end: left; }
+    &[data-tooltip-position$="right"] { --tooltip-pos-end: right; }
+
+    --tooltip-position-area: var(--tooltip-pos-start) var(--tooltip-pos-end);
+  }
 
   anchor-scope: --tooltip-anhor;
   cursor: help;
