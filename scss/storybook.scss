@@ -4,7 +4,48 @@
 .docs-story,
 .sb-story,
 .sb-main-padded,
-.sb-show-main {
+.sb-show-main,
+.sbdocs,
+.sbdocs-wrapper,
+.sbdocs-content,
+.sbdocs-preview,
+.sb-unstyled,
+.sbdocs h1,
+.sbdocs h2,
+.sbdocs h3,
+.sbdocs h4,
+.sbdocs h5,
+.sbdocs h6,
+.sbdocs p,
+.sbdocs li,
+.sbdocs code,
+.sbdocs span,
+.sbdocs div:not(.sbdocs-preview),
+.docblock-colorpalette,
+.docblock-colorpalette-item,
+.docblock-colorpalette-item-name,
+.docblock-colorpalette-item-value,
+.docblock-typeset,
+.docblock-typeset-item,
+.docblock-typeset-label,
+.docblock-typeset-sample,
+.docblock-argstable,
+.docblock-argstable th,
+.docblock-argstable td,
+.docblock-source,
+.docblock-source pre,
+.docblock-source code {
   background-color: var(--body-bg) !important;
   color: var(--body-color) !important;
+}
+
+// Special overrides for Typeset and ColorPalette blocks to handle labels/etc.
+.sbdocs-content {
+  .docblock-typeset,
+  .docblock-colorpalette,
+  .docblock-argstable,
+  .docblock-source {
+    color: inherit;
+    background: transparent !important;
+  }
 }

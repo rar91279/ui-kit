@@ -1,6 +1,50 @@
 import type { Preview } from '@storybook/web-components-vite'
+import React from 'react';
+import { addons } from 'storybook/preview-api';
+import { DocsContainer } from '@storybook/addon-docs/blocks';
 import '../scss/style.scss';
 import '../scss/storybook.scss';
+
+// Event name for updating globals
+const UPDATE_GLOBALS = 'updateGlobals';
+
+// Function to apply theme and color scheme to the body element
+const applyThemeAndScheme = (theme: string, scheme: string) => {
+  const body = document.querySelector('body');
+  if (body) {
+    console.log(`Applying theme: ${theme}, scheme: ${scheme}`);
+
+    // Handle Theme
+    if (theme) {
+      body.classList.remove('fanfare', 'lava-falls');
+      if (theme === 'fanfare') {
+        body.classList.add('fanfare');
+      } else if (theme === 'lava-falls') {
+        body.classList.add('lava-falls');
+      }
+    }
+
+    // Handle Color Scheme
+    if (scheme) {
+      body.classList.remove('light', 'dark');
+      if (scheme === 'light') {
+        body.classList.add('light');
+      } else if (scheme === 'dark') {
+        body.classList.add('dark');
+      }
+    }
+  } else {
+    console.warn('Body element not found');
+  }
+};
+
+// Global subscription to the Storybook channel for theme/scheme changes
+addons.getChannel().on(UPDATE_GLOBALS, ({ globals }) => {
+  if (globals) {
+    const { theme, scheme } = globals;
+    applyThemeAndScheme(theme, scheme);
+  }
+});
 
 const preview: Preview = {
   globalTypes: {
@@ -35,29 +79,22 @@ const preview: Preview = {
   },
   decorators: [
     (story, context) => {
-      const { theme, scheme } = context.globals;
-      const body = document.querySelector('body');
-      if (body) {
-        // Handle Theme
-        body.classList.remove('fanfare', 'lava-falls');
-        if (theme === 'fanfare') {
-          body.classList.add('fanfare');
-        } else if (theme === 'lava-falls') {
-          body.classList.add('lava-falls');
-        }
-
-        // Handle Color Scheme
-        body.classList.remove('light', 'dark');
-        if (scheme === 'light') {
-          body.classList.add('light');
-        } else if (scheme === 'dark') {
-          body.classList.add('dark');
-        }
-      }
+      const { theme, scheme } = context.globals || {};
+      applyThemeAndScheme(theme, scheme);
       return story();
     },
   ],
   parameters: {
+    docs: {
+      source: {
+        state: 'open',
+      },
+      // Use the standard DocsContainer
+      container: DocsContainer,
+    },
+    backgrounds: {
+      disable: true,
+    },
     controls: {
       matchers: {
        color: /(background|color)$/i,

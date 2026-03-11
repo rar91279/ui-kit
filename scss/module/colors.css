@@ -107,7 +107,7 @@ body {
   --base-800: oklch(from var(--base) 20% 0.06 h);
   --base-900: oklch(from var(--base) 15% 0.04 h);
 
-  --body-bg-color: var(--base-50);
+  --body-bg: var(--base-50);
   --body-color: var(--base-900);
 }
 
